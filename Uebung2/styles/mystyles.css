@@ -1,0 +1,166 @@
+/* ОСНОВА */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Verdana, sans-serif;
+  background-color: #f7f8f2;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  height: 60px;
+  background-color: #b2b2b2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 12px;
+}
+
+header img {
+  width: 36px;
+}
+
+header span {
+  font-size: 14px;
+}
+
+/* MAIN */
+main {
+  flex: 1;
+  position: relative;
+}
+
+/* ЗАГОЛОВОК */
+h1 {
+  color: #0082c8;
+  margin: 24px 0 12px 14px;
+  font-size: 26px;
+}
+
+/* КАРТИНКА */
+.main-img {
+  width: 210px;
+  height: 140px;
+  object-fit: cover;
+  margin-left: 14px;
+}
+
+/* ПОДЗАГОЛОВОК */
+h2 {
+  margin: 30px 0 10px 22px;
+  font-size: 20px;
+}
+
+/* СПИСОК */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 22px;
+  width: 300px;
+}
+
+li {
+  border: 1px solid #333;
+  border-radius: 7px;
+  margin-bottom: 8px;
+  text-align: center;
+  padding: 4px;
+  font-size: 13px;
+}
+
+/* ССЫЛКИ */
+li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* HOVER */
+li:hover {
+  border: 2px solid #76b900;
+  background-color: #eef8dd;
+}
+
+li:hover a {
+  color: #76b900;
+  font-weight: bold;
+}
+
+/* ПРАВАЯ ПАНЕЛЬ */
+aside {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0; /* ← растягивает до низа */
+
+  width: 130px;
+  background-color: #e9f1dc;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* центр по вертикали */
+  align-items: center;     /* центр по горизонтали */
+  gap: 60px;               /* расстояние между иконками */
+}
+
+aside img {
+  width: 60px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #ff5f00;
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+}
+.plan-main {
+  padding-top: 35px;
+}
+
+.plan-main h2 {
+  margin-left: 22px;
+  margin-bottom: 18px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 285px;
+  margin-left: 14px;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+th {
+  background-color: #76b900;
+  color: white;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 9px 12px;
+  font-size: 12px;
+}
+
+tr:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+tr:hover {
+  background-color: #c8c5c5;
+}
+
+.button {
+  display: inline-block;
+  margin: 20px 0 0 14px;
+  padding: 8px 12px;
+  background-color: #0082c8;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 13px;
+}
